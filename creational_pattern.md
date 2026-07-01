@@ -651,5 +651,59 @@ The biggest advantage is that it improves readability and avoids large construct
 ```
 ---
 
+```
+5️⃣ Prototype Design Pattern
+
+⭐ Interview Importance: Low to Medium
+
+For a 4+ years Java/Spring Boot developer, usually a basic understanding with one example is enough.
+
+What is Prototype Pattern?
+Interview Definition (Simple)
+
+Prototype Pattern is used to create new objects by copying (cloning) an existing object instead of creating a new one from scratch.
+
+Why Do We Use It?
+
+We use Prototype Pattern when:
+
+Object creation is expensive or time-consuming.
+We need multiple similar objects.
+We want better performance by cloning existing objects.
+What Problem Does It Solve?
+❌ Without Prototype Pattern
+
+Suppose creating an employee object takes a lot of time:
+
+Employee emp1 = new Employee("Arti", "IT", 50000);
+
+Employee emp2 = new Employee("Arti", "IT", 50000);
+
+Employee emp3 = new Employee("Arti", "IT", 50000);
+
+Problems:
+
+❌ Same data is created again and again.
+
+❌ Object creation can be expensive.
+
+❌ Performance may decrease.
+
+✅ With Prototype Pattern
+Employee emp1 = new Employee("Arti", "IT", 50000);
+
+Employee emp2 = emp1.clone();
+
+Employee emp3 = emp1.clone();
+
+Now:
+
+✅ We create one object.
+
+✅ Other objects are created by cloning.
+
+✅ Better performance.
+```
+
 
 
